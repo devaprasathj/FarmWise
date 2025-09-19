@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get AI-powered farming advice, plant disease analysis, weather updates, and market prices to make informed farming decisions.">
+    <title>FarmWise - AI-Powered Farming Advisory</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">FarmWise</a>
+
+            <nav class="nav-menu">
+                <a href="#"><i class="fa-solid fa-robot"></i> AI Farm Assistant</a>
+                <a href="#"><i class="fa-solid fa-leaf"></i> Plant Health Analysis</a>
+                <a href="#"><i class="fa-solid fa-cloud-sun-rain"></i> Weather Prediction</a>
+                <a href="#"><i class="fa-solid fa-chart-line"></i> Market Intelligence</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Farmer Community</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="language-dropdown">
+                    <button class="language-selector">English <i class="fa-solid fa-angle-down"></i></button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">தமிழ் (Tamil)</a></li>
+                        <li><a href="#">മലയാളം (Malayalam)</a></li>
+                        <li><a href="#">हिन्दी (Hindi)</a></li>
+                        <li><a href="#">తెలుగు (Telugu)</a></li>
+                        <li><a href="#">ಕನ್ನಡ (Kannada)</a></li>
+                        <li><a href="#">বাংলা (Bengali)</a></li>
+                        <li><a href="#">मराठी (Marathi)</a></li>
+                        <li><a href="#">ગુજરાતી (Gujarati)</a></li>
+                        <li><a href="#">ਪੰਜਾਬੀ (Punjabi)</a></li>
+                    </ul>
+                </div>
+                <button id="theme-toggle" class="theme-button">
+                    <i class="fa-solid fa-sun"></i>
+                    <span class="sr-only">Toggle Theme</span>
+                </button>
+                <button id="login-btn" class="login-button">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay">
+                <div class="container hero-content">
+                    <p class="hero-subtitle">SMART FARMING SOLUTIONS FOR MODERN FARMERS</p>
+                    <h1 class="hero-title">AI-Powered Farming Advisory <br> at Your Fingertips</h1>
+                    <p class="hero-description">
+                        Get instant answers to your farming questions, analyze plant diseases, and
+                        receive weather updates in your local language.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Get Started &rarr;</a>
+                        <a href="#" class="btn btn-secondary">&gt; Learn More</a>
+                    </div>
+                    <div class="hero-trust">
+                        <p>Trusted by farmers across India</p>
+                        <span>100K+ Users</span>
+                        <span>•</span>
+                        <span>6 Languages</span>
+                        <span>•</span>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Everything You Need for Smart Farming</h2>
+                <p class="section-subtitle">
+                    From AI-powered plant diagnosis to real-time weather updates, our comprehensive platform helps you make informed farming decisions.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AI Farm Assistant</h3>
+                        <p>Ask farming questions and get expert answers instantly.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Plant Health Analysis</h3>
+                        <p>Upload plant photos for instant AI-powered disease diagnosis.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                        <h3>Weather Prediction</h3>
+                        <p>7-day agricultural weather forecasts and alerts.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Market Intelligence</h3>
+                        <p>Live crop prices and market trends from nearby mandis.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-users"></i></div>
+                        <h3>Farmer Community</h3>
+                        <p>Connect with other farmers and share knowledge.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Smart Farm Advisory</h3>
+                        <p>Personalized farming advice based on your location and crops.</p>
+                        <a href="#">Try Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <p>&copy; 2025 FarmWise. All Rights Reserved.</p>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay"></div>
+
+    <div id="login-modal" class="login-modal">
+        <button class="close-button">
+            <i class="fa-solid fa-xmark"></i>
+            <span class="sr-only">Close modal</span>
+        </button>
+        <form class="login-form">
+            <h2>Welcome Back</h2>
+            <p>Please enter your details to sign in.</p>
+            
+            <div class="input-group">
+                <label for="modal-email">Email</label>
+                <input type="email" id="modal-email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="modal-password">Password</label>
+                <input type="password" id="modal-password" name="password" required>
+            </div>
+            
+            <button type="submit" class="submit-button">Sign In</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
